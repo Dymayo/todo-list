@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDiy</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <!-- Sidebar for Projects -->
+        <aside class="sidebar">
+            <h2>Projects</h2>
+            <ul id="project-list"></ul>
+            <form id="project-form">
+                <input type="text" id="project-name" placeholder="New project" required />
+                <button type="submit">+ Add Project</button>
+            </form>
+        </aside>
+
+        <!-- Main Content for Todos -->
+        <main class="main">
+            <h2 id="project-title">Select a Project</h2>
+            <ul id="todo-list"></ul>
+
+            <form id="todo-form">
+                <input type="text" id="todo-title" placeholder="To-Do Title" required />
+                <input type="text" id="todo-desc" placeholder="Description" />
+                <input type="date" id="todo-due" />
+                <select id="todo-priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button type="submit">+ Add To-Do</button>
+            </form>
+        </main>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
