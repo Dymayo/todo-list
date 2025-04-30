@@ -1,6 +1,4 @@
 import "./styles.css";
-import { createTodo, toggleCompleted, editTodo } from './todo.js';
-import { createProject, addTodo, removeTodo, getTodos } from './project.js';
 import init from './dom.js';
 
 document.addEventListener('DOMContentLoaded', () => {
